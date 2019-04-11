@@ -1,0 +1,117 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand">Faculty</a>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link">Events
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link">Faculty
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+</nav>
+<div>
+  <h2>PSG FeedBack App</h2>
+</div>
+<div class="container row margin-top-2rem">
+  <div *ngIf="!isAdminValidate" class="col-8">
+    <div class="row">
+      <div class="col-4 dept-1">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('it')" class="nav-link">Information Technology</a>
+        </div>
+      </div>
+      <div class="col-4 dept-2">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('bio')" class="nav-link">Bio Technology</a>
+        </div>
+      </div>
+      <div class="col-4 dept-3">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('eee')" class="nav-link"> Electrical And Electronic Engineering</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 dept-4">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('civil')" class="nav-link">Civil Engineering</a>
+        </div>
+      </div>
+      <div class="col-4 dept-5">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('mech')" class="nav-link">Mechanical Engineering</a>
+        </div>
+      </div>
+      <div class="col-4 dept-6">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('ece')" class="nav-link"> Electronics And Communication Engineering</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 dept-7">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('agri')" class="nav-link">Agricultural Engineering</a>
+        </div>
+      </div>
+      <div class="col-4 dept-8">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('auto')" class="nav-link">Automobile Engineering</a>
+        </div>
+      </div>
+      <div class="col-4 dept-9">
+        <div class="text text-center vertical-center">
+          <a (click)="dept('cse')" class="nav-link"> Computer Engineering</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="isAdminValidate" class="col-8">
+    <form class="margin-6rem" #loginForm="ngForm" (ngSubmit)="submitForm(loginForm.form);">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Field Name 1:</label>
+        <input type="text" class="form-control" name="fieldOne" ngModel #nameFieldI="ngModel" aria-describedby="emailHelp"
+          placeholder="Enter required field">
+      </div>
+      <div class="form-group">
+        <label>Field Name 2:</label>
+        <input type="text" class="form-control" name="fieldTwo" ngModel #nameFieldII="ngModel" aria-describedby="emailHelp"
+          placeholder="Enter required field">
+      </div>
+      <div class="form-group">
+        <label>Field Name 3:</label>
+        <input type="text" class="form-control" name="fieldThree" ngModel #nameFieldIII="ngModel" aria-describedby="emailHelp"
+          placeholder="Enter required field">
+      </div>
+      <div class="form-group">
+        <label>Field Name 4:</label>
+        <input type="text" class="form-control" name="fieldFour" ngModel #nameFieldIV="ngModel" aria-describedby="emailHelp"
+          placeholder="Enter required field">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div class="col-4">
+    <div *ngIf="!isAdminValidate" class="list">
+      <div class="faculty-list margin-top-2rem text" *ngFor="let list of facultyList">
+        <a class="list-group-item list-group-item-action list-group-item-success" href="/feedback/form">{{list.staffName}}</a>
+      </div>
+    </div>
+
+  </div>
+</div>

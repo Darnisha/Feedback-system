@@ -1,0 +1,101 @@
+
+.dept-1{
+    background-color: #c7c46aa6;
+    /* border:1px solid black; */
+    height:8rem;
+}
+.dept-2{
+    background-color: #bc6ac7a6;
+    /* border:1px solid black; */
+    height:8rem;
+}
+.dept-3{
+    background-color: #ec1f0da6;
+    /* border:1px solid black; */
+    height:8rem;
+}
+.dept-4{
+    background-color: #12abd6a6;
+    /* border:1px solid black; */
+    height:8rem;
+}
+.dept-5{
+    background-color: #8c6e77a6;
+    /* border:1px solid black; */
+    height:8rem;
+}
+.dept-6{
+    background-color: #5bca86a6;
+    /* border:1px solid black; */
+    height:8rem;
+}
+.dept-7{
+    background-color: #eaea09a6;
+    height:8rem;
+}
+.dept-8{
+    background-color: #ec3e0da6;
+    height:8rem;
+}
+.dept-9{
+    background-color: #6a99c7a6;
+    height:8rem;
+}
+.dept-1:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-2:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-3:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-4:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-5:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-6:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-7:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-8:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+  .dept-9:hover .text {
+    color:green;
+    cursor: pointer;
+  }
+
+  .text{
+    color:#1228d2db;
+    font-weight:bold;
+  }
+
+  .vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .list{
+    height: 64vh !important;
+    padding: 1rem;
+    overflow: scroll;
+    overflow-x: hidden; 
+  }
+
+  
+  
+  

@@ -1,0 +1,18 @@
+<h1 class="text-center">
+  PSG Feedback App!
+</h1>
+<form class="margin-6rem" #loginForm="ngForm" (ngSubmit)="submitForm(loginForm.form);">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Register Number</label>
+    <input type="text" class="form-control" name="registerNumber" ngModel #nameFieldI="ngModel" aria-describedby="emailHelp"
+      placeholder="Enter Register Number">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" name="password" ngModel #nameFieldII="ngModel" placeholder="Password">
+  </div>
+
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
